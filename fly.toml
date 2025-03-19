@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for fusion-demo on 2025-03-14T11:38:34-04:00
+# fly.toml app configuration file generated for fusion-demo on 2025-03-19T09:25:08-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -17,6 +17,4 @@ primary_region = 'ord'
   processes = ['app']
 
 [[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
+  size = 'performance-1x'
